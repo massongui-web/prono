@@ -232,7 +232,7 @@ const RAW_MATCHES = [
   ["3 juil.", null, "Australie", "Égypte", 1, 1],
   ["3 juil.", null, "Argentine", "Cap-Vert", 3, 2],
   ["3 juil.", null, "Colombie", "Ghana", 1, 0],
-  ["4 juil.", null, "Canada", "Maroc", null, null],
+  ["4 juil.", null, "Canada", "Maroc", 0, 3],
   ["4 juil.", null, "Paraguay", "France", null, null],
   ["5 juil.", null, "Brésil", "Norvège", null, null],
   ["5 juil.", null, "Mexique", "Angleterre", null, null],
@@ -282,6 +282,7 @@ const GUILLAUME_DATA = [
   ["2-0", "exact20", 72, false], ["2-0", "bon", 41, false], ["1-0", "bon", 73, false],
   ["1-1", "rate", 0, false], ["0-1", "rate", 0, false], ["3-0", "bon", 25, false],
   ["1-0", "tresrare50", 116, false],
+  ["0-1", "bon", 68, false],
 ];
 
 const LUCAS_DATA = [
@@ -315,6 +316,7 @@ const LUCAS_DATA = [
   ["2-0", "exact20", 72, false], ["3-0", "tresrare50", 91, false], ["2-0", "bon", 73, false],
   ["2-0", "rare30", 91, false], ["1-1", "exact20", 126, false], ["2-0", "bon", 25, false],
   ["2-0", "bon", 66, false],
+  ["0-3", "megarare70", 138, false],
 ];
 
 // [prono, categoryKey, points, x2]
@@ -349,6 +351,7 @@ const CLEMENT_DATA = [
   ["2-0", "exact20", 72, false], ["2-0", "bon", 41, false], ["1-1", "rate", 0, false],
   ["2-1", "bon", 61, false], ["1-2", "rate", 0, false], ["4-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const CHLOE_DATA = [
@@ -382,6 +385,7 @@ const CHLOE_DATA = [
   ["3-0", "bon", 52, false], ["3-0", "tresrare50", 91, false], ["3-1", "bon", 73, false],
   ["2-1", "bon", 61, false], ["1-2", "rate", 0, false], ["4-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["0-1", "bon", 68, false],
 ];
 
 const JULIE_DATA = [
@@ -415,6 +419,7 @@ const JULIE_DATA = [
   ["2-0", "exact20", 72, false], ["2-0", "bon", 41, false], ["2-1", "exact20", 93, false],
   ["1-1", "rate", 0, false], ["1-2", "rate", 0, false], ["3-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const JULIEN_DATA = [
@@ -448,6 +453,7 @@ const JULIEN_DATA = [
   ["2-1", "bon", 52, false], ["2-0", "bon", 41, false], ["1-1", "rate", 0, false],
   ["1-0", "bon", 61, false], ["1-2", "rate", 0, false], ["3-0", "bon", 25, false],
   ["1-0", "tresrare50", 116, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const CATHERINE_DATA = [
@@ -481,6 +487,7 @@ const CATHERINE_DATA = [
   ["2-1", "bon", 52, false], ["3-1", "bon", 41, false], ["2-1", "exact20", 93, false],
   ["2-1", "bon", 61, false], ["1-2", "rate", 0, false], ["3-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const CLAIRE_DATA = [
@@ -514,6 +521,7 @@ const CLAIRE_DATA = [
   ["1-0", "bon", 52, false], ["2-0", "bon", 41, false], ["2-1", "exact20", 93, false],
   ["2-1", "bon", 61, false], ["0-1", "rate", 0, false], ["3-0", "bon", 25, false],
   ["1-0", "tresrare50", 116, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const SANDRINE_DATA = [
@@ -547,6 +555,7 @@ const SANDRINE_DATA = [
   ["3-1", "bon", 52, false], ["4-1", "bon", 41, false], ["3-1", "bon", 73, false],
   ["1-3", "rate", 0, false], ["1-2", "rate", 0, false], ["3-2", "ultrarare100", 125, false],
   ["1-3", "rate", 0, false],
+  ["1-3", "bon", 68, false],
 ];
 
 const MAXIMILIEN_DATA = [
@@ -580,6 +589,7 @@ const MAXIMILIEN_DATA = [
   ["0-0", "rate", 0, false], ["2-0", "bon", 41, false], ["0-0", "rate", 0, false],
   ["2-1", "bon", 61, false], ["0-1", "rate", 0, false], ["4-1", "bon", 25, false],
   ["3-1", "bon", 66, false],
+  ["2-2", "rate", 0, false],
 ];
 
 const ARTHUR_DATA = [
@@ -613,6 +623,7 @@ const ARTHUR_DATA = [
   ["2-0", "exact20", 72, false], ["1-0", "bon", 41, false], ["2-1", "exact20", 93, false],
   ["3-2", "bon", 61, false], ["0-1", "rate", 0, false], ["4-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const LOUIS_DATA = [
@@ -646,6 +657,7 @@ const LOUIS_DATA = [
   ["1-0", "bon", 52, false], ["2-0", "bon", 41, false], ["2-1", "exact20", 93, false],
   ["2-2", "rate", 0, false], ["0-1", "rate", 0, false], ["2-0", "bon", 25, false],
   ["1-0", "tresrare50", 116, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const PASCALE_DATA = [
@@ -679,6 +691,7 @@ const PASCALE_DATA = [
   ["2-0", "exact20", 72, false], ["2-1", "bon", 41, false], ["1-2", "rate", 0, false],
   ["2-0", "rare30", 91, false], ["1-2", "rate", 0, false], ["3-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const ANTOINE_DATA = [
@@ -711,6 +724,7 @@ const ANTOINE_DATA = [
   [null, "rate", 0, false], [null, "rate", 0, false], [null, "rate", 0, false],
   [null, "rate", 0, false], [null, "rate", 0, false], [null, "rate", 0, false],
   [null, "rate", 0, false], [null, "rate", 0, false], [null, "rate", 0, false],
+  [null, "rate", 0, false],
   [null, "rate", 0, false],
 ];
 
@@ -745,6 +759,7 @@ const XAVIER_DATA = [
   ["3-1", "bon", 52, false], ["2-1", "bon", 41, false], ["3-1", "bon", 73, false],
   ["1-2", "rate", 0, false], ["1-2", "rate", 0, false], ["4-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const DELPHINE_DATA = [
@@ -778,6 +793,7 @@ const DELPHINE_DATA = [
   ["3-0", "bon", 52, false], ["3-0", "tresrare50", 91, false], ["2-1", "exact20", 93, false],
   ["2-2", "rate", 0, false], ["1-2", "rate", 0, false], ["4-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  [null, "rate", 0, false],
 ];
 
 const LUCIE_DATA = [
@@ -811,6 +827,7 @@ const LUCIE_DATA = [
   ["1-0", "bon", 52, false], ["3-1", "bon", 41, false], ["1-2", "rate", 0, false],
   ["1-1", "rate", 0, false], ["0-0", "bon", 106, false], ["3-0", "bon", 25, false],
   ["2-1", "bon", 66, false],
+  ["1-2", "bon", 68, false],
 ];
 
 const DOMITILLE_DATA = [
@@ -844,6 +861,7 @@ const DOMITILLE_DATA = [
   ["3-2", "bon", 52, false], ["4-1", "bon", 41, false], ["3-1", "bon", 73, false],
   ["2-1", "bon", 61, false], ["1-1", "exact20", 126, false], ["4-1", "bon", 25, false],
   ["3-2", "bon", 66, false],
+  ["1-3", "bon", 68, false],
 ];
 
 const BERNARD_DATA = [
@@ -877,6 +895,7 @@ const BERNARD_DATA = [
   ["2-1", "bon", 52, false], ["3-1", "bon", 41, false], ["2-2", "rate", 0, false],
   ["1-2", "rate", 0, false], ["2-1", "rate", 0, false], ["4-1", "bon", 25, false],
   ["3-1", "bon", 66, false],
+  ["1-3", "bon", 68, false],
 ];
 
 function buildDataset() {
@@ -1122,7 +1141,7 @@ export default function PronoChart() {
               Évolution des points — Famille Masson & Co
             </h1>
             <div className="text-[11px] sm:text-xs font-semibold" style={{ color: "#6B5A2A" }}>
-              19 joueurs · 88 matchs joués sur 104
+              19 joueurs · 89 matchs joués sur 104
             </div>
           </div>
         </div>
